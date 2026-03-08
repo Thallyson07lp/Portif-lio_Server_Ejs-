@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>teste pratico</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  
+  <!-- cabecario -->
+  <%- include('partials/header') %>
+
+  <!--definir locais -->
+  <section> <!-- Selecao do 'theme' personalizado ou dark e ligth. -->
+    <input type="color" name="color" id="input_Theme" value="#f6f6f6">
+    <button data-theme="t-light" id="btn_Theme"><img src="" alt="button Theme light or dark."></button>
+  </section>
+
+  <main><!-- Corpo do site -->
+
+    <section><!-- Sobre mim e minha vida profissional -->
+      <h2>Sobre</h2>
+      
+      <dl> <!-- Lista de definicao / descritiva -->
+        <dt>teste 1</dt>  
+          <dd>link 1</dd>
+      </dl>
+    </section>
+
+    <section><!-- Habilidades/soft skills-->
+      <h2>Soft skills</h2>
+      <ul>
+        <li>Excelente comunicação</li>
+        <li>Resolução de problemas</li>
+        <li>Criatividade</li>
+        <li>Trabalho em equipe</li>
+        <li>Organização</li>
+      </ul>
+    </section>
+ 
+    <section><!-- Areas dos projetos -->  
+      <h2>Projetos</h2>
+      
+      <dl class="list_projetos"> <!-- Lista de projetos com descricoes -->
+        <dt>Teste</dt>
+          <dd>Exemplo <a href="#">Acesse aqui</a></dd>
+        <dt>Teste2</dt>
+          <dd>Exemplo2 <a href="#">Acesse aqui</a></dd>
+      </dl>
+    </section>
+
+    <section>
+      <!--Download do Curriculo-->
+    </section>
+  </main>
+  
+  <footer><!--Rodapé do site -->
+    <section>
+      <h2>contatos</h2>
+      <!-- Lista ordenada 1.2.3.4.5.... -->  
+      <ul> 
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
+    
+  </footer>
+
+  <!-- Seu JS -->
+  <script type="module" src="/javascript/main.js"></script>
+</body>
+</html>

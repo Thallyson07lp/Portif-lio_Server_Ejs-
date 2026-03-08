@@ -1,0 +1,29 @@
+:root {
+  /* Configuration of the default fonts  */
+  --font-main: system-ui, sans-serif;
+  --color-text:#111;
+  
+/* Configuration of the default colors */
+  --cor-principal: #4CAF50;
+  --cor-secundaria: #222;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--color-text);  
+  margin: 0%;
+}
+
+
+/* Construir textos reponsivos( Em faze de teste ) */
+h1{font-size: clamp(20px, 2vw, 47px) ;}
+p{font-size: clamp(8px, 1vw, 18px) ;}
+a{font-size: clamp(12px, 1.5vw, 35px) ;}
+/* h2{font-size: clamp(18px, 2vw, 40px) ;} */
+
+
+/* FLEX UTILITIES */
+.d-flex{ display:flex;}
+.f-col{flex-direction: column;}
+.align-center{align-items: center;}
+.justify-center{justify-content: center;}

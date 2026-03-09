@@ -30,18 +30,3 @@ export function entrace() {
   
   .to([nav, header_profile], { x: 0, opacity: 1, duration: .8 })
 }
-
-export function animIntor() {
-  gsap.timeline({
-    scrollTrigger: {
-      trigger: ".header",
-      start: "top top",
-      end: "+=" + document.querySelector('.header').offsetHeight/2 + " top",
-      scrub: true,
-      markers: true
-    }
-  })
-
-  .from("#navigation",{ display: "none", opacity: 0})
-  .to(".header",{ height: "50vh"})
-}

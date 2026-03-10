@@ -1,17 +1,9 @@
-import { gsap } from "https://cdn.skypack.dev/gsap";
-import { ScrollTrigger } from "https://cdn.skypack.dev/gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
-
-const header = document.querySelector(".header");
-const header_profile = document.querySelector("#header_profile");
-const nav = document.querySelector("#navigation");
-
-export function entrace() {
+export function entrace(gsap, header, header_profile, nav) {
 
   const tl = gsap.timeline({invalidateOnRefresh: true});
 
-  tl.set(header_profile,{x: ()=>{
+  tl.set(header_profile,{
+    x: ()=>{
       const headerRect = header.getBoundingClientRect();
       const profileRect = header_profile.getBoundingClientRect(); 
       // centro do header (só largura importa)

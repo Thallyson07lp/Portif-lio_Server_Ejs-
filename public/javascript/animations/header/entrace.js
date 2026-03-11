@@ -12,9 +12,7 @@ export function entrace(gsap, header, header_profile, nav) {
       const profileCenter = header_profile.offsetLeft + profileRect.width / 2;
       // quanto precisa mover
       const centerX = headerCenter - profileCenter;
-      window.addEventListener("resize", () => {
-        tl.invalidate().restart();
-      });
+      
       return centerX;
     }
   })

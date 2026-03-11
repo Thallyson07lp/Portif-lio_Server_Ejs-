@@ -5,6 +5,6 @@ main {
     align-items: center;
 }
 
-#about{
+#aboutMe{
     width: calc(var(--header-scale) * 80vw);
 }

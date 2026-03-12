@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <title>teste pratico</title>
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/master.css">
 </head>
 
 <body>
@@ -14,83 +14,37 @@
   <!-- cabecario -->
   <%- include('partials/header') %>
 
+    <!-- main -->
+  <%- include('partials/main') %>
 
 
-    <main><!-- Corpo do site -->
+      <!--definir locais -->
+  <section> <!-- Selecao do 'theme' personalizado ou dark e ligth. -->
+    <input type="color" name="color" id="input_Theme" value="#f6f6f6">
+    <button data-theme="t-light" id="btn_Theme"><img src="" alt="button Theme light or dark."></button>
+  </section>
 
-      <section id="aboutMe"><!-- Sobre mim e minha vida profissional -->
-        <h2>Sobre</h2>
-        <p>Olá, sou o <span>Thallyson</span></p>
-        <p>
-          Desenvolvedor Full Stack, com foco no desenvolvimento de aplicações web modernas, funcionais e bem
-          estruturadas. Tenho experiência no uso de HTML, CSS e JavaScript para construção de interfaces responsivas e
-          interativas, além de trabalhar com MySQL para modelagem e gerenciamento de bancos de dados. No desenvolvimento
-          do lado do servidor e na construção de aplicações completas, utilizo EJS para renderização de templates
-          dinâmicos e também aplico bibliotecas como GSAP para criação de animações e experiências visuais mais fluidas
-          e envolventes nas interfaces.
 
-          Busco sempre escrever código limpo, organizado e escalável, seguindo boas práticas de desenvolvimento e
-          mantendo atenção especial à experiência do usuário, desempenho e estrutura das aplicações. Tenho grande
-          interesse em aprender continuamente, acompanhar novas tecnologias e evoluir constantemente como desenvolvedor.
-
-          Estou em busca de uma primeira oportunidade profissional na área de desenvolvimento, onde eu possa aplicar
-          meus conhecimentos, contribuir com projetos reais e continuar aprimorando minhas habilidades técnicas dentro
-          de um ambiente profissional.
-        </p>
-
-      </section>
-
-      <section><!-- Habilidades/soft skills-->
-        <h2>Soft skills</h2>
-        <ul>
-          <li>Excelente comunicação</li>
-          <li>Resolução de problemas</li>
-          <li>Criatividade</li>
-          <li>Trabalho em equipe</li>
-          <li>Organização</li>
-        </ul>
-      </section>
-
-      <section><!-- Areas dos projetos -->
-        <h2>Projetos</h2>
-
-        <dl class="list_projetos"> <!-- Lista de projetos com descricoes -->
-          <dt>Teste</dt>
-          <dd>Exemplo <a href="#">Acesse aqui</a></dd>
-          <dt>Teste2</dt>
-          <dd>Exemplo2 <a href="#">Acesse aqui</a></dd>
-        </dl>
-      </section>
-
-      <section>
-        <!--Download do Curriculo-->
-      </section>
-    </main>
-
-    <!--definir locais -->
-    <section> <!-- Selecao do 'theme' personalizado ou dark e ligth. -->
-      <input type="color" name="color" id="input_Theme" value="#f6f6f6">
-      <button data-theme="t-light" id="btn_Theme"><img src="" alt="button Theme light or dark."></button>
+  <footer><!--Rodapé do site -->
+    <section>
+      <!--Download do Curriculo-->
+    </section>
+    <section>
+      <h2>contatos</h2>
+      <!-- Lista ordenada 1.2.3.4.5.... -->
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </section>
 
+  </footer>
 
-    <footer><!--Rodapé do site -->
-      <section>
-        <h2>contatos</h2>
-        <!-- Lista ordenada 1.2.3.4.5.... -->
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </section>
-
-    </footer>
-
-    <!-- Seu JS -->
-    <script defer type="module" src="/javascript/main.js"></script>
+      <!-- Seu JS -->
+      <script defer type="module" src="/javascript/main.js"></script>
 </body>
 
 </html>

@@ -12,9 +12,7 @@ app.get('/', (req, res) =>{
     res.render("index")
 })
 // rota para páginas inexistentes
-app.use((req, res) => {
-  res.status(404).render("404");
-});
+
 
 export const port = 7777;
 export default app; 

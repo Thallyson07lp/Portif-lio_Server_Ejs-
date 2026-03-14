@@ -1,22 +1,16 @@
 /* =========================
-   VARIAVEL
-   ========================= */
-:root{
-  --header-scale: 0.75;
-
-}
-/* =========================
    HEADER - BASE LAYOUT
    ========================= */
 
 header{
   justify-content: space-between;
-  background-color: #ffffff;
+  background-color: hsl(0, 0%, 100%);
   padding: 1% 3%;
   position: sticky; 
   top: 0;
   transform: scale(var(--header-scale));
   border-radius: 15px;
+  z-index: 1;
 }
 
 

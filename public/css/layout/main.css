@@ -5,6 +5,10 @@ main {
     align-items: center;
 }
 
-#aboutMe{
+#aboutMe {
     width: calc(var(--header-scale) * 80vw);
+    overflow: hidden;
+
+    -webkit-mask-image: linear-gradient(to bottom, black var(--mask), transparent);
+    mask-image: linear-gradient(to bottom, black var(--mask), transparent);
 }

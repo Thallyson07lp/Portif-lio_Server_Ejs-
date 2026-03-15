@@ -5,10 +5,22 @@ main {
     align-items: center;
 }
 
+/* Setting of the Animation and the 'aboutMe' */
 #aboutMe {
     width: calc(var(--header-scale) * 80vw);
     overflow: hidden;
+    mask-image: linear-gradient(to bottom, white 70%, black 30%, transparent);
+    mask-size: 100% 200%;
+    mask-position: 0 -115%;
+    animation: aboutAnimation 6s 1s ease forwards;
+}
 
-    -webkit-mask-image: linear-gradient(to bottom, black var(--mask), transparent);
-    mask-image: linear-gradient(to bottom, black var(--mask), transparent);
+@keyframes aboutAnimation {
+    from {
+        mask-position: 0 -115%;
+    }
+    to {
+        mask-position: 0 -200%;
+        mask-image: none;
+    }
 }

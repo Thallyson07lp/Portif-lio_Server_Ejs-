@@ -6,6 +6,9 @@
 /* Configuration of the default colors */
   --cor-principal: #c8eac9;
   --cor-secundaria: #222;
+
+  /*  */
+  --accent: #c8f04a;
 }
 
 body {
@@ -13,7 +16,6 @@ body {
   color: var(--color-text);  
   margin: 0%;
 }
-
 
 /* Construir textos reponsivos( Em faze de teste ) */
 h1{font-size: clamp(20px, 2vw, 47px) ;}

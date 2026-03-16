@@ -22,5 +22,4 @@ export function entrace(gsap, header, header_profile, about, nav) {
     .to([nav, header_profile], { x: 0, opacity: 1, duration: .8 })
   tl
     .to(about, { y: 0, duration: 1.8 }, "<")
-
 }

@@ -2,6 +2,6 @@
 
 @import url('base.css');
 
-@import url('layout/header.css');
-@import url('layout/main.css');
+@import url('layout/header/header.css');
+@import url('layout/main/main.css');
 @import url('layout/body.css');

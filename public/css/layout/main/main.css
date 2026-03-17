@@ -1,0 +1,109 @@
+/* settings of the 'main layout '*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ── About Section ──────────────────────────────── */
+#aboutMe {
+  width: calc(var(--header-scale) * 80vw);
+  overflow: hidden;
+}
+
+/* ── About Title ────────────────────────────────── */
+#aboutTitle {
+  font-size: clamp(10px, 1.3vw, 80px);
+}
+
+#aboutTitle::before {
+  content: '';
+  display: inline-block;
+  height: 2px;
+  width: 0px;
+  background: #c8f04a;
+  vertical-align: middle;
+  /* alinha verticalmente com o texto */
+  margin-right: 7px;
+  /* espaço entre a linha e o texto */
+  animation: beforeLineGrow 1.6s 0.8s ease forwards;
+}
+
+/* ── About Hello ────────────────────────────────── */
+#aboutHello {
+  position: relative;
+  font-size: clamp(10px, 2.5vw, 80px);
+  font-weight: 800;
+  margin: 15px 0px;
+  margin-top: 8px;
+}
+
+#aboutHello::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #c8f04a;
+  animation: afterLineGrow 3.4s 0.5s ease forwards;
+}
+
+/* ── Name ───────────────────────────────────────── */
+.name {
+  position: relative;
+  color: var(--accent);
+  display: inline-block;
+}
+
+/* ── lines ─────────────────────────────────── */
+.text {
+  display: flex;          /* coloca as palavras em linha */
+  flex-wrap: wrap;        /* quebra para a próxima linha quando necessário */
+  overflow: hidden;       /* esconde os spans antes de animar */
+  margin-left:clamp(7px, 1vw, 20px) ;      /* espaço da margem esquerda */
+}
+
+.linha {
+  display: inline-block;                    /* permite width e height sem quebrar linha */
+  transform: translateY(100%);              /* começa abaixo do container */
+  opacity: 0;                               /* começa invisível */
+  animation: linhaUp 0.4s ease forwards;   /* sobe e aparece */
+}
+
+.linha::after {
+  content: "\00a0"; /* espaço não quebrável entre as palavras durante a animação*/
+}
+
+/* ── Animations ─────────────────────────────────── */
+@keyframes linhaUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes beforeLineGrow {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 2.5vw;
+  }
+}
+
+@keyframes afterLineGrow {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 40vw;
+  }
+}

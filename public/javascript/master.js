@@ -1,6 +1,6 @@
 // Animations Gsaps
 import { entrace } from "./animations/entrace.js";
-import { scrollZoom } from "./animations/header/scroll_zoom.js"
+import { scrollZoom } from "./animations/header/scroll_zoom.js";
 
 // Impotations Gsaps
 import { gsap } from "./gsap.js";

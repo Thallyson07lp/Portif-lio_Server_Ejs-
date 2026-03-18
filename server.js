@@ -1,5 +1,13 @@
-import app, {port} from "./app.js"
+import server, { port } from "./app.js"
 
-app.listen(port, ()=>{
-    console.log(`Servidor da porta ${port} onine...`)
-})
+try {
+
+  await server.listen({ port });
+  console.log(`Servidor na porta ${port} online...`);
+
+} catch (err) {
+
+  server.log.error(err)
+  process.exit(1)
+  
+}

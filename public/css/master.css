@@ -3,5 +3,8 @@
 @import url('base.css');
 
 @import url('layout/header/header.css');
+
 @import url('layout/main/main.css');
+@import url('layout/main/sections/projects.css');
+
 @import url('layout/body.css');

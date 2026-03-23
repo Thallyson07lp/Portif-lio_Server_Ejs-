@@ -8,5 +8,5 @@ export function scrollZoom(gsap, header) {
       end: "+=150",
       scrub: true
     }
-  });
-}
+  })
+};

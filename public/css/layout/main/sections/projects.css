@@ -4,6 +4,10 @@
     height: 100vh; 
     background-color: black;
     color: aliceblue;
+    padding-top: calc(var(--header-height));
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
     overflow: hidden;
 }
 

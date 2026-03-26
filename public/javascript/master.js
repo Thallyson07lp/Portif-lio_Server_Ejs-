@@ -10,7 +10,7 @@ import { ScrollTrigger } from "./gsap.js";
 /* ── Const ─────────────────────────────────── */
 
 // Const header... (Reoganizar Name)
-const header = document.querySelector("#header");
+const header = document.querySelector("header");
 const header_profile = document.querySelector("#header_profile");
 const nav = document.querySelector("#navigation");
 

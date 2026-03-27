@@ -1,0 +1,20 @@
+#navigation_list li a::after {
+    content: "";
+    display: block;
+    position: relative;
+    left: 50%;
+    width: 10%;
+    height: 3px;
+    background-color: black;
+
+    transform: translateX(-50%);
+}
+
+#navigation_list li a::after {
+    width: 0;
+    transition: 0.3s;
+}
+
+#navigation_list li a:hover::after {
+    width: 50%;
+}

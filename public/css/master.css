@@ -1,10 +1,14 @@
-@import url('tokens.css');
+/* Padrdão ITCSS */
+/* [1] Settings — variáveis e tokens */
+@import url('settings/tokens.css');
 
-@import url('base.css');
+/* [2] Base — reset e elementos HTML */
+@import url('base/typography.css');
 
-@import url('layout/header/header.css');
-@import url('layout/header/navs.css');
+/* [3] Objects — estruturas sem estilo (layout puro) */
+@import url('utilities/utilities.css');
 
-@import url('layout/main/main.css');
-@import url('layout/main/sections/projects.css');
-
+/* [4] Components — partes visuais da UI */
+@import url('components/header/header.css');
+@import url('components/header/navs.css');
+@import url('components/main/main\(Reorganizar\).css');

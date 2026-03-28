@@ -1,0 +1,16 @@
+/* ────── VARIAVEL ─────────────── */
+:root {
+
+  --header-scale: 0.75;
+
+  /* Configuration of the default fonts  */
+  --font-main: system-ui, sans-serif;
+  --color-text: #111;
+
+  /* Configuration of the default colors */
+  --cor-principal: #c8eac9;
+  --cor-secundaria: #222;
+
+  /*  */
+  --accent: #c8f04a;
+}

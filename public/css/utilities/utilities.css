@@ -1,0 +1,5 @@
+/* FLEX UTILITIES */
+.d-flex{ display:flex;}
+.f-col{flex-direction: column;}
+.align-center{align-items: center;}
+.justify-center{justify-content: center;}

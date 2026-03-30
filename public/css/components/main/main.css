@@ -1,0 +1,11 @@
+@import url('sections/projects.css');
+@import url('sections/about.css');
+
+/* settings of the 'main layout '*/
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+}
+

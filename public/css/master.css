@@ -6,9 +6,9 @@
 @import url('base/typography.css');
 
 /* [3] Objects — estruturas sem estilo (layout puro) */
-@import url('utilities/utilities.css');
+@import url('utilities/utilities.css'); 
+@import url('objects/objects.css');
 
 /* [4] Components — partes visuais da UI */
 @import url('components/header/header.css');
 @import url('components/header/navs.css');
-@import url('components/main/main\(Reorganizar\).css');

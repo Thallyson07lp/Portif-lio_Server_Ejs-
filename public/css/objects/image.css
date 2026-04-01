@@ -1,0 +1,10 @@
+/* =========================================
+   IMAGE OBJECTS
+   Padrões reutilizáveis para imagens
+========================================= */
+
+.o-square-img-sm {
+  width: clamp(60px, 5vw, 120px);
+  aspect-ratio: 1 / 1;
+  margin: 0 2%;
+}

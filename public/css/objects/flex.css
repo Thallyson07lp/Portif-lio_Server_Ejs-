@@ -1,0 +1,27 @@
+/* =========================================
+   FLEX UTILITIES (Objects)
+   Padrões de layout com flexbox
+========================================= */
+
+.o-flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.o-flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.o-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.o-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 20px;
+}

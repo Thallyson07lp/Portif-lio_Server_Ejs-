@@ -18,7 +18,7 @@ server.register(fastifyView, {
 //Arquivos estaticos 
 server.register(fastifyStatic, {
   root: path.join(__dirname, 'public'),
-})//Estudar
+})
 
 //rota principal
 server.get('/', async (req, res) => {

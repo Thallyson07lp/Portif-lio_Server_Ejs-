@@ -15,7 +15,7 @@ header{
    HEADER PROFILE SECTION
    ========================= */
 
-#header_profile{
+#profile{
   min-width: clamp(100px, 32vw, 500px);
 }
 
@@ -31,22 +31,6 @@ header{
 
 
 /* =========================
-   HEADER NAVIGATION
-   ========================= */
-
-#navigation_list{
-  flex-wrap: wrap;  
-  gap: 0px 20px;
-}
-
-.c-nav-link {
-  text-decoration: none;
-  padding-block: 16px;
-  font-weight: bold;
-  color: black; /* depois variável */
-}
-
-/* =========================
    RESPONSIVE RULES
    ========================= */
 @media (max-width: 600px){
@@ -56,7 +40,7 @@ header{
     flex-direction: column;
   }
 
-  #header_profile{
+  #profile{
     flex-direction: column;
   }
 

@@ -1,0 +1,3 @@
+/* components/_index.css */
+@import './nav/nav.css';
+@import './profile/profile.css';

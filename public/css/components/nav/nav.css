@@ -6,7 +6,6 @@
     width: 10%;
     height: 3px;
     background-color: black;
-
     transform: translateX(-50%);
 }
 
@@ -17,4 +16,20 @@
 
 #navigation_list li a:hover::after {
     width: 50%;
+}
+
+/* =========================
+   HEADER NAVIGATION
+   ========================= */
+
+#navigation_list{
+  flex-wrap: wrap;  
+  gap: 0px 20px;
+}
+
+.c-nav-link {
+  text-decoration: none;
+  padding-block: 16px;
+  font-weight: bold;
+  color: black; /* depois variável */
 }

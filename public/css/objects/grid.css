@@ -1,0 +1,8 @@
+/* objects/grid.css */
+.o-horizontal-scroll {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 300px;
+  gap: 20px;
+  width: max-content;
+}

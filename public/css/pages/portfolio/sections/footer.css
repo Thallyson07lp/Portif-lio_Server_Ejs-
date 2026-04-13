@@ -1,0 +1,9 @@
+/* pages/footer.css */
+
+footer {
+  width: 100%;
+  background-color: var(--cor-secundaria);
+  color: aliceblue;
+  box-sizing: border-box;
+}
+

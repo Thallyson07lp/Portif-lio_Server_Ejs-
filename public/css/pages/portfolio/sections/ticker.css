@@ -1,0 +1,31 @@
+
+/* ── Ticker ─────────────────────────────────────── */
+.footer-ticker {
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--accent);
+  padding: 12px 0;
+}
+
+.footer-ticker-track {
+  display: flex;
+  gap: 60px;
+  width: max-content;
+  animation: ticker 12s linear infinite;
+}
+
+.footer-ticker-track span {
+  font-weight: 800;
+  font-size: clamp(12px, 1.5vw, 22px);
+  color: #111;
+  white-space: nowrap;
+}
+
+.footer-ticker-track span::before {
+  content: "✦ ";
+}
+
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}

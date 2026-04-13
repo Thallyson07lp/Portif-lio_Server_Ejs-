@@ -14,48 +14,16 @@ export function scrollZoom(gsap, header, ScrollTrigger) {
   });
 
   /* ── THEME: PROJECTS = PRETO / BRANCO ───────── */
-  ScrollTrigger.create({
-    trigger: "#projects",
-    start: "top center",
-    end: "bottom center",
 
-    onEnter: () => {
-      gsap.to("body", {
-        backgroundColor: "#fff",
-        color: "#000",
-        duration: 0.4
-      });
-    },
-
-    onEnterBack: () => {
-      gsap.to("body", {
-        backgroundColor:"#fff" ,
-        color:"#000" ,
-        duration: 0.4
-      });
-    }
-  });
-
-  /* ── THEME: CONTACTS = BRANCO / PRETO ───────── */
-  ScrollTrigger.create({
-    trigger: "#contacts",
-    start: "top center",
-    end: "bottom center",
-
-    onEnter: () => {
-      gsap.to("body", {
-        backgroundColor: "#000",
-        color: "#fff",
-        duration: 0.4
-      });
-    },
-
-    onEnterBack: () => {
-      gsap.to("body", {
-        backgroundColor: "#000",
-        color: "#fff",
-        duration: 0.4
-      });
+  gsap.to("body", {
+    backgroundColor: "#222",
+    color: "#ffffff",
+    ease: "none",
+    scrollTrigger: {
+      trigger: "#projects",
+      start: "top-=100px center",
+      end: "top+=100px center",
+      scrub: true
     }
   });
 }

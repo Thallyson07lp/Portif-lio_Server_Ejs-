@@ -16,7 +16,6 @@ export function ScrollProjects(gsap, ScrollTrigger, header) {
             pin: true,
             anticipatePin: 1,
             pinSpacing: true,
-            markers: true,      // tire depois de testar
         }
     });
 

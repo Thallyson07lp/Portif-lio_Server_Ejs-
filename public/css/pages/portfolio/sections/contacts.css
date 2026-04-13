@@ -1,6 +1,7 @@
 /* ── Contatos ───────────────────────────────────── */
 #contacts {
   padding: 40px 30px;
+  padding-top: calc(var(--header-scale) * 40px * 2.5);
 }
 
 /* TÍTULO */

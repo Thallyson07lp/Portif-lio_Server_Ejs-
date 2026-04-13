@@ -19,12 +19,13 @@ const nav = document.querySelector("#navigation");
 
 addEventListener("load", () => {
 
+
     // Animações na entrada...
     entrace(gsap, header, header_profile, nav);
 
     // Animação Continua 
-    scrollZoom(gsap, header);
-    ScrollProjects( gsap, ScrollTrigger, header)
+    scrollZoom(gsap, header, ScrollTrigger);
+    ScrollProjects(gsap, ScrollTrigger, header)
 })
 
 

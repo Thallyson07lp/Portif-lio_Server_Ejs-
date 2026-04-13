@@ -2,8 +2,9 @@
 
 footer {
   width: 100%;
-  background-color: var(--cor-secundaria);
-  color: aliceblue;
+  background-color: var();
+  color: black;
+
   box-sizing: border-box;
 }
 

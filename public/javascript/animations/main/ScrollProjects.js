@@ -3,14 +3,14 @@ export function ScrollProjects(gsap, ScrollTrigger, header) {
 
     const container = document.querySelector("#conteiner-projects");
 
-    // Define a variável CSS com a altura do header
-    document.documentElement.style.setProperty('--header-height', `${header.offsetHeight * 0.78}px`);
-
     // Cria uma timeline para controlar tudo junto
     const tl = gsap.timeline({
         scrollTrigger: {
             trigger: "#projects",
-            start: () => `top top`,
+            start: () => {
+                const navbar = header.getBoundingClientRect().bottom;
+                return `top top+=${navbar}`;
+            },
             end: () => `+=${container.scrollWidth - window.innerWidth}`,
             scrub: 2,           // quanto mais alto, mais "suave/lento"
             pin: true,

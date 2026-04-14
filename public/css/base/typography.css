@@ -1,11 +1,27 @@
 body {
   font-family: var(--font-main);
-  color: var(--color-text);  
+  color: var(--color-text);
   margin: 0%;
 }
 
+.h2-class {
+  font-size: clamp(20px, 1.5vw, 47px);
+  font-weight: 800;
+  margin: 15px 0px;
+  margin-top: 8px;
+}
+
 /* Construir textos reponsivos( Em faze de teste ) */
-h1{font-size: clamp(20px, 2vw, 47px);}
-p{font-size: clamp(8px, 1vw, 18px);}
-a{font-size: clamp(12px, 1.5vw, 35px);}
+h1 {
+  font-size: clamp(20px, 2vw, 47px);
+}
+
+p {
+  font-size: clamp(8px, 1vw, 18px);
+}
+
+a {
+  font-size: clamp(12px, 1.5vw, 35px);
+}
+
 /* h2{font-size: clamp(18px, 2vw, 40px) ;} */

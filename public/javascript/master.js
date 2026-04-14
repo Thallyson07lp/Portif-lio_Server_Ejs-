@@ -11,7 +11,7 @@ import { ScrollTrigger } from "./gsap.js";
 
 // Const header... (Reoganizar Name)
 const header = document.querySelector("header");
-const header_profile = document.querySelector("#header_profile");
+const profile = document.querySelector("#profile");
 const nav = document.querySelector("#navigation");
 
 // Const aboutMe...
@@ -21,7 +21,7 @@ addEventListener("load", () => {
 
 
     // Animações na entrada...
-    entrace(gsap, header, header_profile, nav);
+    entrace(gsap, header, profile, nav);
 
     // Animação Continua 
     scrollZoom(gsap, header, ScrollTrigger);

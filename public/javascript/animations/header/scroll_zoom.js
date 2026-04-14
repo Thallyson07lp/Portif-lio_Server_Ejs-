@@ -13,17 +13,4 @@ export function scrollZoom(gsap, header, ScrollTrigger) {
     }
   });
 
-  /* ── THEME: PROJECTS = PRETO / BRANCO ───────── */
-
-  gsap.to("body", {
-    backgroundColor: "#222",
-    color: "#ffffff",
-    ease: "none",
-    scrollTrigger: {
-      trigger: "#projects",
-      start: "top-=100px center",
-      end: "top+=100px center",
-      scrub: true
-    }
-  });
 }

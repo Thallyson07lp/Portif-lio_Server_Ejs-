@@ -1,6 +1,6 @@
 /* ── About Section ──────────────────────────────── */
 #aboutMe {
-  width: calc(var(--header-scale) * 80vw);
+  width: calc(var(--header-scale) * 85vw);
   height: 85vh;
   overflow: hidden;
 }

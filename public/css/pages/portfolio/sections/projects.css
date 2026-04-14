@@ -2,11 +2,6 @@
 
 #projects {
   display: inline-block;
-  width: 100%;
-  height: 100vh;
-  padding-top: var(--header-height);
-  padding-left: 30px;
-  padding-right: 30px;
-  box-sizing: border-box;
+  width: calc(var(--header-scale) * 85vw) !important;
   overflow: hidden;
 }

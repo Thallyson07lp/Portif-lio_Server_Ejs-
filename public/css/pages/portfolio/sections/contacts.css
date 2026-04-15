@@ -2,6 +2,8 @@
 #contacts {
   padding: 40px 30px;
   box-sizing: border-box;
+  width: calc(var(--header-scale) * 85vw);
+          
 }
 
 /* TÍTULO */
@@ -14,6 +16,7 @@
 /* CONTAINER PRINCIPAL */
 .contacts-container {
   display: flex;
+  width: 100%;
   gap: 30px;
   flex-wrap: wrap;
 }

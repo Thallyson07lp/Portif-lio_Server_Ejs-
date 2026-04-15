@@ -3,5 +3,6 @@
 #projects {
   display: inline-block;
   width: calc(var(--header-scale) * 85vw) !important;
+  padding-top: 1.5%;
   overflow: hidden;
 }

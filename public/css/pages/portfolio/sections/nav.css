@@ -5,17 +5,21 @@
     left: 50%;
     width: 10%;
     height: 3px;
-    background-color: black;
+    background-color: var(--accent);
     transform: translateX(-50%);
 }
 
 #navigation_list li a::after {
     width: 0;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 #navigation_list li a:hover::after {
-    width: 50%;
+    width: 60%;
+}
+#navigation_list li a:hover {
+  color: var(--accent);
+  transition: 0.3s;
 }
 
 /* =========================

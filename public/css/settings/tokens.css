@@ -13,4 +13,7 @@
 
   /*  */
   --accent: #c8f04a;
+
+  /* ← variável de tempo */
+  --nav-link-duration: 0.2s; 
 }

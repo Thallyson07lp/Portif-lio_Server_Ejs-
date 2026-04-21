@@ -1,39 +1,56 @@
-#navigation_list li a::after {
-    content: "";
-    display: block;
-    position: relative;
-    left: 50%;
-    width: 10%;
-    height: 3px;
-    background-color: var(--accent);
-    transform: translateX(-50%);
+#navigation_list li a {
+  display: inline-block;
+   
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  paint-order: stroke fill;
+  transform: translateY(0px);
+  transition: 
+    color var(--nav-link-duration) ease 0s,
+    padding-bottom,
+    -webkit-text-stroke-width var(--nav-link-duration),
+    transform var(--nav-link-duration) ease;
+}
+
+#navigation_list li a:hover {
+  color: var(--accent);
+  padding-bottom: 5px; /* ← reserva o espaço que vai "subir" */
+  -webkit-text-stroke-width: 7px;
+  /* transform: translateY(-4px);  */
 }
 
 #navigation_list li a::after {
-    width: 0;
-    transition: 0.5s;
+  content: "";
+  display: block;
+  position: relative;
+  left: 50%;
+  width: 0;
+  height: 4px;
+  margin-top: 2.5%;
+  background-color: var(--accent);
+  border-radius: 10px;
+  transform: translateX(-50%);
+  z-index: -1;
+  transition: var(--nav-link-duration);
 }
 
 #navigation_list li a:hover::after {
-    width: 60%;
-}
-#navigation_list li a:hover {
-  color: var(--accent);
-  transition: 0.3s;
+  width: 70%;
+  outline: 7px solid black;
 }
 
 /* =========================
    HEADER NAVIGATION
    ========================= */
 
-#navigation_list{
-  flex-wrap: wrap;  
+#navigation_list {
+  flex-wrap: wrap;
   gap: 0px 20px;
 }
 
 .c-nav-link {
   text-decoration: none;
-  padding-block: 16px;
   font-weight: bold;
-  color: black; /* depois variável */
+  color: black;
+  /* depois variável */
 }

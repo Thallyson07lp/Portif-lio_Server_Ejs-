@@ -1,0 +1,11 @@
+.c-nav-link li a {
+  display: inline-block; 
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.c-nav-list {
+  flex-wrap: wrap;
+  gap: 0px 20px;
+}

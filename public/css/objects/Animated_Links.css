@@ -1,0 +1,65 @@
+/* =========================================
+   OBJECT: Link Underline
+   Linha animada embaixo do link
+========================================= */
+/* ── cresce do centro ──────────────────── */
+.o-link-underline li a::after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 50%;
+  width: 0;
+  height: 4px;
+  margin-top: 2.5%;
+  background-color: var(--accent);
+  border-radius: 10px;
+  transform: translateX(-50%);
+  z-index: -1;
+  transition: var(--nav-link-duration);
+}
+
+.o-link-underline li a:hover::after {
+  width: 70%;
+  outline: 5px solid black;
+}
+
+/* ── cresce da esquerda ────────────────── */
+.o-link-underline--left li a::after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 0;
+  width: 0;
+  height: 4px;
+  margin-top: 2.5%;
+  background-color: var(--accent);
+  border-radius: 10px;
+  transition: var(--nav-link-duration);
+}
+
+.o-link-underline--left li a:hover::after {
+  width: 70%;
+}
+
+/* ── cresce da direita ─────────────────── */
+.o-link-underline--right li a::after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 100%;
+  width: 0;
+  height: 4px;
+  margin-top: 2.5%;
+  background-color: var(--accent);
+  border-radius: 10px;
+  transform: translateX(-100%);
+  transition: var(--nav-link-duration);
+}
+
+.o-link-underline--right li a:hover::after {
+  width: 70%;
+}
+/* =========================================
+   OBJECT: Clean List
+   já existe no seu _lists.css — não duplica
+========================================= */

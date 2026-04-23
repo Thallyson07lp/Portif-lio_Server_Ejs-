@@ -3,17 +3,17 @@
 
   --header-scale: 0.75;
 
-  /* Configuration of the default fonts  */
-  --font-main: system-ui, sans-serif;
+  /* Typography */
+  --font-base: system-ui, sans-serif;
   --color-text: #111;
 
-  /* Configuration of the default colors */
-  --cor-principal: #c8eac9;
-  --cor-secundaria: #222;
+  /* Colors */
+  --color-primary: #c8eac9;
+  --color-secondary: #3f3f3fdd;
 
   /*  */
   --accent: #c8f04a;
 
   /* ← variável de tempo */
-  --nav-link-duration: 0.2s; 
+  --nav-link-duration: 0.2s;
 }

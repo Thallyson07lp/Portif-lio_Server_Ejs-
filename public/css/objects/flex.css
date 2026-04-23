@@ -12,7 +12,10 @@
   display: flex;
   flex-direction: column;
 }
-
+.o-flex-row {
+  display: flex;
+  flex-direction: row;
+}
 .o-center {
   display: flex;
   align-items: center;
